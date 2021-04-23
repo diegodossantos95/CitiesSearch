@@ -8,21 +8,22 @@
 import SwiftUI
 
 struct SearchCityView: View {
-    private let presenter = SearchCityPresenter()
-    @State var searchText = ""
-    @State var cityList = [City]()
+    @ObservedObject private var viewModel = SearchCityViewModel()
     
     var body: some View {
-        VStack {
-            Text("Cities").font(.system(.title))
-                .padding()
-            SearchBar(text: $searchText)
-                .padding(.bottom)
-            List(cityList, id: \.name, rowContent: { city in
-                Text(city.name)
-           })
-        }.onAppear {
-            self.presenter.loadCities()
+        NavigationView {
+            VStack {
+                SearchBar(text: $viewModel.searchText)
+                List(viewModel.cityList, id: \.name, rowContent: { city in
+                    VStack {
+                        Text("\(city.name), \(city.country)")
+                        Text("(\(city.coord.lon), \(city.coord.lat))")
+                            .font(.subheadline)
+                    }
+               })
+                .listStyle(InsetListStyle())
+            }
+            .navigationBarTitle("Cities")
         }
     }
 }
