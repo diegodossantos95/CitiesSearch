@@ -16,6 +16,7 @@ class SearchCityViewModel: ObservableObject {
     
     init(){
         //TODO: load json data
+        cityList.append(City(name: "Sapucaia do Sul", country: "Brazil", coord: Coordinate(lon: -51.15542427382699, lat: -29.84720693303679)))
         
         $searchText
             .sink (receiveValue: { [weak self] value in

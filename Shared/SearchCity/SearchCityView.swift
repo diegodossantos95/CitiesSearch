@@ -15,11 +15,14 @@ struct SearchCityView: View {
             VStack {
                 SearchBar(text: $viewModel.searchText)
                 List(viewModel.cityList, id: \.name, rowContent: { city in
-                    VStack {
-                        Text("\(city.name), \(city.country)")
-                        Text("(\(city.coord.lon), \(city.coord.lat))")
-                            .font(.subheadline)
+                    NavigationLink(destination: MapView(viewModel: MapViewModel(coordinate: .init(latitude: city.coord.lat, longitude: city.coord.lon)))) {
+                        VStack {
+                            Text("\(city.name), \(city.country)")
+                            Text("(\(city.coord.lon), \(city.coord.lat))")
+                                .font(.subheadline)
+                        }
                     }
+                    
                })
                 .listStyle(InsetListStyle())
             }

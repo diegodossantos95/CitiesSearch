@@ -22,6 +22,10 @@
 		8F9093BC26335E2B001D76DB /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093B626335E1E001D76DB /* Coordinate.swift */; };
 		8F9093D1263370CD001D76DB /* SearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093D0263370CD001D76DB /* SearchCityViewModel.swift */; };
 		8F9093D2263370CD001D76DB /* SearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093D0263370CD001D76DB /* SearchCityViewModel.swift */; };
+		8F9093E226338F82001D76DB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093E126338F82001D76DB /* MapView.swift */; };
+		8F9093E326338F82001D76DB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093E126338F82001D76DB /* MapView.swift */; };
+		8F9093ED2633AD1E001D76DB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093EC2633AD1E001D76DB /* MapViewModel.swift */; };
+		8F9093EE2633AD1E001D76DB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093EC2633AD1E001D76DB /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,8 @@
 		8F9093A726335DE1001D76DB /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		8F9093B626335E1E001D76DB /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		8F9093D0263370CD001D76DB /* SearchCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewModel.swift; sourceTree = "<group>"; };
+		8F9093E126338F82001D76DB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8F9093EC2633AD1E001D76DB /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +115,11 @@
 		8F755E152631AABC008B0785 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8F9093E026338F73001D76DB /* Map */,
+				8F9093DF26338F62001D76DB /* SearchCity */,
 				8F9093A626335DC3001D76DB /* Entities */,
 				8F90938C26335ABF001D76DB /* DesignSystem */,
 				8F755E162631AABC008B0785 /* CitiesSearchApp.swift */,
-				8F755E172631AABC008B0785 /* SearchCityView.swift */,
-				8F9093D0263370CD001D76DB /* SearchCityViewModel.swift */,
 				8F755E182631AABC008B0785 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -180,6 +186,24 @@
 				8F9093B626335E1E001D76DB /* Coordinate.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		8F9093DF26338F62001D76DB /* SearchCity */ = {
+			isa = PBXGroup;
+			children = (
+				8F755E172631AABC008B0785 /* SearchCityView.swift */,
+				8F9093D0263370CD001D76DB /* SearchCityViewModel.swift */,
+			);
+			path = SearchCity;
+			sourceTree = "<group>";
+		};
+		8F9093E026338F73001D76DB /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8F9093E126338F82001D76DB /* MapView.swift */,
+				8F9093EC2633AD1E001D76DB /* MapViewModel.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,12 +363,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9093E226338F82001D76DB /* MapView.swift in Sources */,
 				8F755E412631AABC008B0785 /* SearchCityView.swift in Sources */,
 				8F9093A826335DE1001D76DB /* City.swift in Sources */,
 				8F755E3F2631AABC008B0785 /* CitiesSearchApp.swift in Sources */,
 				8F9093D1263370CD001D76DB /* SearchCityViewModel.swift in Sources */,
 				8F90938E26335ADA001D76DB /* SearchBar.swift in Sources */,
 				8F9093B726335E1E001D76DB /* Coordinate.swift in Sources */,
+				8F9093ED2633AD1E001D76DB /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,8 +379,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F9093D2263370CD001D76DB /* SearchCityViewModel.swift in Sources */,
+				8F9093E326338F82001D76DB /* MapView.swift in Sources */,
 				8F755E422631AABC008B0785 /* SearchCityView.swift in Sources */,
 				8F9093B126335DE3001D76DB /* City.swift in Sources */,
+				8F9093EE2633AD1E001D76DB /* MapViewModel.swift in Sources */,
 				8F755E402631AABC008B0785 /* CitiesSearchApp.swift in Sources */,
 				8F9093BC26335E2B001D76DB /* Coordinate.swift in Sources */,
 			);

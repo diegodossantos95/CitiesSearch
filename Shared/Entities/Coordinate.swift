@@ -8,6 +8,6 @@
 import Foundation
 
 struct Coordinate {
-    var lon: String
-    var lat: String
+    var lon: Double
+    var lat: Double
 }
