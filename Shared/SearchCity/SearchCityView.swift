@@ -15,17 +15,6 @@ struct SearchCityView: View {
             VStack {
                 //TODO: add activity indicator
                 SearchBar(text: $viewModel.searchText)
-//                List(viewModel.cityList, id: \._id, rowContent: { city in
-//                    NavigationLink(destination: MapView(viewModel: MapViewModel(coordinate: .init(latitude: city.coord.lat, longitude: city.coord.lon)))) {
-//                        VStack {
-//                            Text("\(city.name), \(city.country)")
-//                            Text("(\(city.coord.lon), \(city.coord.lat))")
-//                                .font(.subheadline)
-//                        }
-//                    }
-//
-//               })
-//                .listStyle(InsetListStyle())
                 CityListViewRepresentation(cityList: $viewModel.cityList)
             }
             .navigationBarTitle("Cities")
