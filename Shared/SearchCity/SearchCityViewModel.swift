@@ -17,11 +17,12 @@ class SearchCityViewModel: ObservableObject {
     
     init() {
         //TODO: Use injection dependency
+        //TODO: sort the city list
         DispatchQueue.global(qos: .background).async { [weak self] in
             let items = CityDataManager.load()
-            self?.originaCityList.append(contentsOf: items)
-            DispatchQueue.main.async { [weak self] in
-                self?.cityList.append(contentsOf: items)
+            self?.originaCityList = items
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+                self?.cityList = items
             }
         }
 

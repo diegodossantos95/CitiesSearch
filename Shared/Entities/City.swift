@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct City: Codable {
+struct City: Codable, Hashable {
+    var _id: Int
     var name: String
     var country: String
     var coord: Coordinate
