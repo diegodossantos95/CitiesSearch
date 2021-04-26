@@ -24,10 +24,7 @@ class SearchCityViewModel: ObservableObject {
         $searchText
             .sink (receiveValue: { [weak self] value in
                 if let cityListWrap = self?.originaCityList {
-                    //TODO: use original city list to filter
-                    DispatchQueue.global(qos: .background).async { [weak self] in
-                        self?.cityList = cityListWrap.filter({ value.isEmpty ? true : $0.name.starts(with: value) })
-                    }
+                    self?.cityList = cityListWrap.filter({ value.isEmpty ? true : $0.name.starts(with: value) })
                 }
             })
             .store(in: &subscriptions)
