@@ -17,14 +17,24 @@ class SearchCityViewModel: ObservableObject {
     
     init() {
         //TODO: Use injection dependency
-        let items = CityDataManager.load()
-        originaCityList.append(contentsOf: items)
-        cityList.append(contentsOf: items)
-        
+        DispatchQueue.global(qos: .background).async { [weak self] in
+            let items = CityDataManager.load()
+            self?.originaCityList.append(contentsOf: items)
+            DispatchQueue.main.async { [weak self] in
+                self?.cityList.append(contentsOf: items)
+            }
+        }
+
         $searchText
             .sink (receiveValue: { [weak self] value in
-                if let cityListWrap = self?.originaCityList {
-                    self?.cityList = cityListWrap.filter({ value.isEmpty ? true : $0.name.starts(with: value) })
+                DispatchQueue.global(qos: .background).async { [weak self] in
+                    if let cityListWrap = self?.originaCityList {
+                        //TODO: improve performance
+                        let result = cityListWrap.filter({ value.isEmpty ? true : $0.name.starts(with: value) })
+                        DispatchQueue.main.async { [weak self] in
+                            self?.cityList = result
+                        }
+                    }
                 }
             })
             .store(in: &subscriptions)

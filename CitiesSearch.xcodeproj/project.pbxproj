@@ -15,7 +15,6 @@
 		8F755E422631AABC008B0785 /* SearchCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F755E172631AABC008B0785 /* SearchCityView.swift */; };
 		8F755E432631AABC008B0785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F755E182631AABC008B0785 /* Assets.xcassets */; };
 		8F755E442631AABC008B0785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F755E182631AABC008B0785 /* Assets.xcassets */; };
-		8F90938E26335ADA001D76DB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90938D26335ADA001D76DB /* SearchBar.swift */; };
 		8F9093A826335DE1001D76DB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093A726335DE1001D76DB /* City.swift */; };
 		8F9093B126335DE3001D76DB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093A726335DE1001D76DB /* City.swift */; };
 		8F9093B726335E1E001D76DB /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093B626335E1E001D76DB /* Coordinate.swift */; };
@@ -32,6 +31,8 @@
 		8F9094052636733E001D76DB /* CityDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9094032636733E001D76DB /* CityDataManager.swift */; };
 		8F90941026367449001D76DB /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90940F26367449001D76DB /* FileUtils.swift */; };
 		8F90941126367449001D76DB /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90940F26367449001D76DB /* FileUtils.swift */; };
+		8F90941F2636F89F001D76DB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90941E2636F89F001D76DB /* SearchBar.swift */; };
+		8F9094202636F89F001D76DB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90941E2636F89F001D76DB /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,6 @@
 		8F755E382631AABC008B0785 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F755E3C2631AABC008B0785 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		8F755E3E2631AABC008B0785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F90938D26335ADA001D76DB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = "../../../voice-ios-app/Voice/VoiceV2/VoiceBaseTableView/SearchBar.swift"; sourceTree = "<group>"; };
 		8F9093A726335DE1001D76DB /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		8F9093B626335E1E001D76DB /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		8F9093D0263370CD001D76DB /* SearchCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewModel.swift; sourceTree = "<group>"; };
@@ -75,6 +75,7 @@
 		8F9093F7263672F7001D76DB /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cities.json; path = Shared/cities.json; sourceTree = SOURCE_ROOT; };
 		8F9094032636733E001D76DB /* CityDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataManager.swift; sourceTree = "<group>"; };
 		8F90940F26367449001D76DB /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		8F90941E2636F89F001D76DB /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +187,7 @@
 		8F90938C26335ABF001D76DB /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				8F90938D26335ADA001D76DB /* SearchBar.swift */,
+				8F90941E2636F89F001D76DB /* SearchBar.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -399,9 +400,9 @@
 				8F755E3F2631AABC008B0785 /* CitiesSearchApp.swift in Sources */,
 				8F9094042636733E001D76DB /* CityDataManager.swift in Sources */,
 				8F9093D1263370CD001D76DB /* SearchCityViewModel.swift in Sources */,
-				8F90938E26335ADA001D76DB /* SearchBar.swift in Sources */,
 				8F9093B726335E1E001D76DB /* Coordinate.swift in Sources */,
 				8F9093ED2633AD1E001D76DB /* MapViewModel.swift in Sources */,
+				8F90941F2636F89F001D76DB /* SearchBar.swift in Sources */,
 				8F90941026367449001D76DB /* FileUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +418,7 @@
 				8F9093B126335DE3001D76DB /* City.swift in Sources */,
 				8F9093EE2633AD1E001D76DB /* MapViewModel.swift in Sources */,
 				8F755E402631AABC008B0785 /* CitiesSearchApp.swift in Sources */,
+				8F9094202636F89F001D76DB /* SearchBar.swift in Sources */,
 				8F9094052636733E001D76DB /* CityDataManager.swift in Sources */,
 				8F9093BC26335E2B001D76DB /* Coordinate.swift in Sources */,
 			);

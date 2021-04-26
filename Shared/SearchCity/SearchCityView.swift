@@ -13,6 +13,7 @@ struct SearchCityView: View {
     var body: some View {
         NavigationView {
             VStack {
+                //TODO: add activity indicator
                 SearchBar(text: $viewModel.searchText)
                 List(viewModel.cityList, id: \.name, rowContent: { city in
                     NavigationLink(destination: MapView(viewModel: MapViewModel(coordinate: .init(latitude: city.coord.lat, longitude: city.coord.lon)))) {
