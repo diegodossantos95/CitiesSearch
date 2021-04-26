@@ -17,9 +17,9 @@ class SearchCityViewModel: ObservableObject {
     
     init() {
         //TODO: Use injection dependency
-        //TODO: sort the city list
         DispatchQueue.global(qos: .background).async { [weak self] in
-            let items = CityDataManager.load()
+            var items = CityDataManager.load()
+            items.sort { ($0.name, $0.country) < ($1.name, $1.country) }
             self?.originaCityList = items
             DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
                 self?.cityList = items
