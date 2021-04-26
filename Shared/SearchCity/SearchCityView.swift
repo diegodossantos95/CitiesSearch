@@ -9,13 +9,18 @@ import SwiftUI
 
 struct SearchCityView: View {
     @ObservedObject private var viewModel = SearchCityViewModel()
-    
+
     var body: some View {
         NavigationView {
             VStack {
-                //TODO: add activity indicator
                 SearchBar(text: $viewModel.searchText)
-                CityListViewRepresentation(cityList: $viewModel.cityList)
+                if viewModel.isLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                    Spacer()
+                } else {
+                    CityListViewRepresentation(cityList: $viewModel.cityList)
+                }
             }
             .navigationBarTitle("Cities")
         }

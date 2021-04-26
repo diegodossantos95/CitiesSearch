@@ -11,18 +11,21 @@ import Combine
 class SearchCityViewModel: ObservableObject {
     @Published var searchText = ""
     @Published var cityList = [City]()
+    @Published var isLoading = true
     
     private var originaCityList = [City]()
     private var subscriptions = Set<AnyCancellable>()
     
     init() {
         //TODO: Use injection dependency
+        self.isLoading = true
         DispatchQueue.global(qos: .background).async { [weak self] in
             var items = CityDataManager.load()
             items.sort { ($0.name, $0.country) < ($1.name, $1.country) }
             self?.originaCityList = items
             DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
                 self?.cityList = items
+                self?.isLoading = false
             }
         }
 
