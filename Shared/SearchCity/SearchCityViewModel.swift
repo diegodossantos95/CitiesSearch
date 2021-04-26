@@ -12,6 +12,7 @@ class SearchCityViewModel: ObservableObject {
     @Published var searchText = ""
     @Published var cityList = [City]()
     @Published var isLoading = true
+    @Published var selectedCity: City?
     
     private var originaCityList = [City]()
     private var subscriptions = Set<AnyCancellable>()

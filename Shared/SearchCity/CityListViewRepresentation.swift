@@ -12,9 +12,16 @@ struct CityListViewRepresentation: UIViewControllerRepresentable {
     typealias UIViewControllerType = CityListViewController
     
     @Binding var cityList: [City]
+    var didSelectRowAt: (Int) -> ()
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(didSelectRowAt: didSelectRowAt)
+    }
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<CityListViewRepresentation>) -> CityListViewController {
-        return CityListViewController()
+        let viewController = CityListViewController()
+        viewController.tableView.delegate = context.coordinator
+        return viewController
     }
 
     func updateUIViewController(_ uiViewController: CityListViewController, context: UIViewControllerRepresentableContext<CityListViewRepresentation>) {
@@ -22,10 +29,24 @@ struct CityListViewRepresentation: UIViewControllerRepresentable {
     }
 }
 
+extension CityListViewRepresentation {
+    class Coordinator: NSObject, UITableViewDelegate {
+        private let didSelectRowAt: (Int) -> ()
+
+        init(didSelectRowAt: @escaping (Int) -> ()) {
+            self.didSelectRowAt = didSelectRowAt
+        }
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            self.didSelectRowAt(indexPath.row)
+        }
+    }
+}
+
 class CityListViewController: UIViewController {
     
     private let defaultCellId = "defaultCellId"
-    private var tableView = UITableView()
+    var tableView = UITableView()
     var cityList = [City]() {
         didSet {
             self.tableView.reloadData()
@@ -57,6 +78,7 @@ extension CityListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let city = cityList[indexPath.row]
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: self.defaultCellId)
+        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         cell.textLabel?.text = "\(city.name), \(city.country)"
         cell.detailTextLabel?.text = "(\(city.coord.lon), \(city.coord.lat))"
         return cell
