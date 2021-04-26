@@ -12,20 +12,23 @@ class SearchCityViewModel: ObservableObject {
     @Published var searchText = ""
     @Published var cityList = [City]()
     
+    private var originaCityList = [City]()
     private var subscriptions = Set<AnyCancellable>()
     
-    init(){
-        //TODO: load json data
-        cityList.append(City(name: "Sapucaia do Sul", country: "Brazil", coord: Coordinate(lon: -51.15542427382699, lat: -29.84720693303679)))
+    init() {
+        //TODO: Use injection dependency
+        let items = CityDataManager.load()
+        originaCityList.append(contentsOf: items)
+        cityList.append(contentsOf: items)
         
         $searchText
             .sink (receiveValue: { [weak self] value in
-                if let cityListWrap = self?.cityList {
+                if let cityListWrap = self?.originaCityList {
                     //TODO: use original city list to filter
-                    self?.cityList = cityListWrap.filter({ value.isEmpty ? true : $0.name.starts(with: value) })
+                    DispatchQueue.global(qos: .background).async { [weak self] in
+                        self?.cityList = cityListWrap.filter({ value.isEmpty ? true : $0.name.starts(with: value) })
+                    }
                 }
-                
-                print("Last recieved: \(value)")
             })
             .store(in: &subscriptions)
     }
