@@ -8,33 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		8F755E322631AABC008B0785 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F755E312631AABC008B0785 /* Tests_iOS.swift */; };
-		8F755E3D2631AABC008B0785 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F755E3C2631AABC008B0785 /* Tests_macOS.swift */; };
 		8F755E3F2631AABC008B0785 /* CitiesSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F755E162631AABC008B0785 /* CitiesSearchApp.swift */; };
-		8F755E402631AABC008B0785 /* CitiesSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F755E162631AABC008B0785 /* CitiesSearchApp.swift */; };
 		8F755E412631AABC008B0785 /* SearchCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F755E172631AABC008B0785 /* SearchCityView.swift */; };
-		8F755E422631AABC008B0785 /* SearchCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F755E172631AABC008B0785 /* SearchCityView.swift */; };
 		8F755E432631AABC008B0785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F755E182631AABC008B0785 /* Assets.xcassets */; };
-		8F755E442631AABC008B0785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F755E182631AABC008B0785 /* Assets.xcassets */; };
 		8F9093A826335DE1001D76DB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093A726335DE1001D76DB /* City.swift */; };
-		8F9093B126335DE3001D76DB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093A726335DE1001D76DB /* City.swift */; };
 		8F9093B726335E1E001D76DB /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093B626335E1E001D76DB /* Coordinate.swift */; };
-		8F9093BC26335E2B001D76DB /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093B626335E1E001D76DB /* Coordinate.swift */; };
 		8F9093D1263370CD001D76DB /* SearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093D0263370CD001D76DB /* SearchCityViewModel.swift */; };
-		8F9093D2263370CD001D76DB /* SearchCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093D0263370CD001D76DB /* SearchCityViewModel.swift */; };
 		8F9093E226338F82001D76DB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093E126338F82001D76DB /* MapView.swift */; };
-		8F9093E326338F82001D76DB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093E126338F82001D76DB /* MapView.swift */; };
 		8F9093ED2633AD1E001D76DB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093EC2633AD1E001D76DB /* MapViewModel.swift */; };
-		8F9093EE2633AD1E001D76DB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9093EC2633AD1E001D76DB /* MapViewModel.swift */; };
 		8F9093F8263672F7001D76DB /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F9093F7263672F7001D76DB /* cities.json */; };
-		8F9093F9263672F7001D76DB /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F9093F7263672F7001D76DB /* cities.json */; };
 		8F9094042636733E001D76DB /* CityDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9094032636733E001D76DB /* CityDataManager.swift */; };
-		8F9094052636733E001D76DB /* CityDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9094032636733E001D76DB /* CityDataManager.swift */; };
 		8F90941026367449001D76DB /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90940F26367449001D76DB /* FileUtils.swift */; };
-		8F90941126367449001D76DB /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90940F26367449001D76DB /* FileUtils.swift */; };
 		8F90941F2636F89F001D76DB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90941E2636F89F001D76DB /* SearchBar.swift */; };
-		8F9094202636F89F001D76DB /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90941E2636F89F001D76DB /* SearchBar.swift */; };
 		8F9094692637119E001D76DB /* CityListViewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9094682637119E001D76DB /* CityListViewRepresentation.swift */; };
-		8F90946A2637119E001D76DB /* CityListViewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9094682637119E001D76DB /* CityListViewRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +31,6 @@
 			remoteGlobalIDString = 8F755E1C2631AABC008B0785;
 			remoteInfo = "CitiesSearch (iOS)";
 		};
-		8F755E392631AABC008B0785 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8F755E112631AABC008B0785 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8F755E242631AABC008B0785;
-			remoteInfo = "CitiesSearch (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -60,15 +39,9 @@
 		8F755E182631AABC008B0785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F755E1D2631AABC008B0785 /* CitiesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitiesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F755E202631AABC008B0785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F755E252631AABC008B0785 /* CitiesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitiesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F755E272631AABC008B0785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F755E282631AABC008B0785 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		8F755E2D2631AABC008B0785 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F755E312631AABC008B0785 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		8F755E332631AABC008B0785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F755E382631AABC008B0785 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F755E3C2631AABC008B0785 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		8F755E3E2631AABC008B0785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F9093A726335DE1001D76DB /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		8F9093B626335E1E001D76DB /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		8F9093D0263370CD001D76DB /* SearchCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewModel.swift; sourceTree = "<group>"; };
@@ -89,21 +62,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F755E222631AABC008B0785 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8F755E2A2631AABC008B0785 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F755E352631AABC008B0785 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -118,9 +77,7 @@
 			children = (
 				8F755E152631AABC008B0785 /* Shared */,
 				8F755E1F2631AABC008B0785 /* iOS */,
-				8F755E262631AABC008B0785 /* macOS */,
 				8F755E302631AABC008B0785 /* Tests iOS */,
-				8F755E3B2631AABC008B0785 /* Tests macOS */,
 				8F755E1E2631AABC008B0785 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -145,9 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				8F755E1D2631AABC008B0785 /* CitiesSearch.app */,
-				8F755E252631AABC008B0785 /* CitiesSearch.app */,
 				8F755E2D2631AABC008B0785 /* Tests iOS.xctest */,
-				8F755E382631AABC008B0785 /* Tests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,15 +115,6 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		8F755E262631AABC008B0785 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				8F755E272631AABC008B0785 /* Info.plist */,
-				8F755E282631AABC008B0785 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		8F755E302631AABC008B0785 /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,15 +122,6 @@
 				8F755E332631AABC008B0785 /* Info.plist */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		8F755E3B2631AABC008B0785 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				8F755E3C2631AABC008B0785 /* Tests_macOS.swift */,
-				8F755E3E2631AABC008B0785 /* Info.plist */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 		8F90938C26335ABF001D76DB /* DesignSystem */ = {
@@ -259,23 +196,6 @@
 			productReference = 8F755E1D2631AABC008B0785 /* CitiesSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F755E242631AABC008B0785 /* CitiesSearch (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F755E4A2631AABC008B0785 /* Build configuration list for PBXNativeTarget "CitiesSearch (macOS)" */;
-			buildPhases = (
-				8F755E212631AABC008B0785 /* Sources */,
-				8F755E222631AABC008B0785 /* Frameworks */,
-				8F755E232631AABC008B0785 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CitiesSearch (macOS)";
-			productName = "CitiesSearch (macOS)";
-			productReference = 8F755E252631AABC008B0785 /* CitiesSearch.app */;
-			productType = "com.apple.product-type.application";
-		};
 		8F755E2C2631AABC008B0785 /* Tests iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F755E4D2631AABC008B0785 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
@@ -294,24 +214,6 @@
 			productReference = 8F755E2D2631AABC008B0785 /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		8F755E372631AABC008B0785 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F755E502631AABC008B0785 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				8F755E342631AABC008B0785 /* Sources */,
-				8F755E352631AABC008B0785 /* Frameworks */,
-				8F755E362631AABC008B0785 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8F755E3A2631AABC008B0785 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 8F755E382631AABC008B0785 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -324,16 +226,9 @@
 					8F755E1C2631AABC008B0785 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					8F755E242631AABC008B0785 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 					8F755E2C2631AABC008B0785 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 8F755E1C2631AABC008B0785;
-					};
-					8F755E372631AABC008B0785 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 8F755E242631AABC008B0785;
 					};
 				};
 			};
@@ -351,9 +246,7 @@
 			projectRoot = "";
 			targets = (
 				8F755E1C2631AABC008B0785 /* CitiesSearch (iOS) */,
-				8F755E242631AABC008B0785 /* CitiesSearch (macOS) */,
 				8F755E2C2631AABC008B0785 /* Tests iOS */,
-				8F755E372631AABC008B0785 /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -368,23 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F755E232631AABC008B0785 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F9093F9263672F7001D76DB /* cities.json in Resources */,
-				8F755E442631AABC008B0785 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8F755E2B2631AABC008B0785 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F755E362631AABC008B0785 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -412,37 +289,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F755E212631AABC008B0785 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F90941126367449001D76DB /* FileUtils.swift in Sources */,
-				8F9093D2263370CD001D76DB /* SearchCityViewModel.swift in Sources */,
-				8F9093E326338F82001D76DB /* MapView.swift in Sources */,
-				8F755E422631AABC008B0785 /* SearchCityView.swift in Sources */,
-				8F9093B126335DE3001D76DB /* City.swift in Sources */,
-				8F9093EE2633AD1E001D76DB /* MapViewModel.swift in Sources */,
-				8F755E402631AABC008B0785 /* CitiesSearchApp.swift in Sources */,
-				8F9094202636F89F001D76DB /* SearchBar.swift in Sources */,
-				8F90946A2637119E001D76DB /* CityListViewRepresentation.swift in Sources */,
-				8F9094052636733E001D76DB /* CityDataManager.swift in Sources */,
-				8F9093BC26335E2B001D76DB /* Coordinate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8F755E292631AABC008B0785 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8F755E322631AABC008B0785 /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F755E342631AABC008B0785 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F755E3D2631AABC008B0785 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,11 +304,6 @@
 			isa = PBXTargetDependency;
 			target = 8F755E1C2631AABC008B0785 /* CitiesSearch (iOS) */;
 			targetProxy = 8F755E2E2631AABC008B0785 /* PBXContainerItemProxy */;
-		};
-		8F755E3A2631AABC008B0785 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8F755E242631AABC008B0785 /* CitiesSearch (macOS) */;
-			targetProxy = 8F755E392631AABC008B0785 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -618,54 +464,6 @@
 			};
 			name = Release;
 		};
-		8F755E4B2631AABC008B0785 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = YK3NXBF7NQ;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegodossantos.CitiesSearch;
-				PRODUCT_NAME = CitiesSearch;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		8F755E4C2631AABC008B0785 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = YK3NXBF7NQ;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diegodossantos.CitiesSearch;
-				PRODUCT_NAME = CitiesSearch;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		8F755E4E2631AABC008B0785 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -711,50 +509,6 @@
 			};
 			name = Release;
 		};
-		8F755E512631AABC008B0785 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = YK3NXBF7NQ;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.diegodossantos.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "CitiesSearch (macOS)";
-			};
-			name = Debug;
-		};
-		8F755E522631AABC008B0785 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = YK3NXBF7NQ;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.diegodossantos.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "CitiesSearch (macOS)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -776,29 +530,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F755E4A2631AABC008B0785 /* Build configuration list for PBXNativeTarget "CitiesSearch (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F755E4B2631AABC008B0785 /* Debug */,
-				8F755E4C2631AABC008B0785 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8F755E4D2631AABC008B0785 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F755E4E2631AABC008B0785 /* Debug */,
 				8F755E4F2631AABC008B0785 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8F755E502631AABC008B0785 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F755E512631AABC008B0785 /* Debug */,
-				8F755E522631AABC008B0785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
