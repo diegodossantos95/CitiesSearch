@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct FileUtils {
-    static func readLocalFile(forName name: String) -> Data? {
+protocol FileUtilsProtocol {
+    func readLocalFile(forName name: String) -> Data?
+    func parse<T:Decodable>(jsonData: Data) -> T?
+}
+
+//TODO: create unit tests
+struct FileUtils: FileUtilsProtocol {
+    func readLocalFile(forName name: String) -> Data? {
         do {
             if let bundlePath = Bundle.main.path(forResource: name,
                                                  ofType: "json"),
@@ -23,10 +29,11 @@ struct FileUtils {
         return nil
     }
     
-    static func parse<T:Decodable>(jsonData: Data) -> T? {
+    func parse<T:Decodable>(jsonData: Data) -> T? {
         do {
             return try JSONDecoder().decode(T.self, from: jsonData)
         } catch {
+            //TODO: handle error
             print(error)
         }
         

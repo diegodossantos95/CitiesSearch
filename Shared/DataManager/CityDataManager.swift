@@ -7,15 +7,26 @@
 
 import Foundation
 
-//TODO: create protocol to improve test
-struct CityDataManager {
-    static func load() -> [City] {
-        guard let data = FileUtils.readLocalFile(forName: "cities") else {
-            //TODO: fallback
+protocol CityDataManagerProtocol {
+    func load() -> [City]
+}
+
+//TODO: use singleton
+//TODO: create unit tests
+struct CityDataManager: CityDataManagerProtocol {
+    private var fileUtils: FileUtilsProtocol
+    
+    init(fileUtils: FileUtilsProtocol = FileUtils()) {
+        self.fileUtils = fileUtils
+    }
+    
+    func load() -> [City] {
+        guard let data = self.fileUtils.readLocalFile(forName: "cities") else {
+            //TODO: handle error
             return []
         }
         
-        let items: [City]? = FileUtils.parse(jsonData: data)
+        let items: [City]? = self.fileUtils.parse(jsonData: data)
         return items ?? []
     }
 }
