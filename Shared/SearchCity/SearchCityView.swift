@@ -31,6 +31,7 @@ struct SearchCityView: View {
             }
             .navigationBarTitle("Cities")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
